@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Sidemenu from "./Components/Sidemenu/Sidemenu";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import TaskList from "./Components/TaskList/TaskList";
+import Home from "./Components/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/sidemenu' element={<Sidemenu />}>
+            <Route path='home' element={<Home />} />
+            <Route path='tasklist' element={<TaskList />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

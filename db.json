@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Sanjay",
+      "taskStatus": "Completed"
+    },
+    {
+      "id": 2,
+      "name": "Blessing",
+      "taskStatus": "Incompleted"
+    },
+    {
+      "id": 3,
+      "name": "Anandh",
+      "taskStatus": "Completed"
+    },
+    {
+      "id": 4,
+      "name": "Muthu",
+      "taskStatus": "Incompleted"
+    }
+  ]
+}
